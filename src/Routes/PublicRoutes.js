@@ -1,17 +1,14 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Layout from "../Components/Layout/Layout";
-import LoginForm from "../Components/Auth/LoginForm";
-import Example from "../Pages"
-
-
+import Home from "../Pages/Home";
+import About from "../Pages/About";
 const PublicRoutes = () => {
   return (
     <Layout>
       <Routes>
-        <Route path="/" element={<LoginForm/>}/>
-        <Route path="/Example" element={<Example/>}/>
-
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </Layout>
   );
